@@ -27,4 +27,36 @@ Training a Hopfield net involves lowering the energy of states that the net shou
 
 ## Usage
 
-- To train a Hopfield Network on a dataset of images, first place the images in the .train folder
+- To train a Hopfield Network on a dataset of images, first place the images in the /train folder (A few images are already provided). Then run train.py script.
+
+### Result:
+<p align="center">
+  <img src="https://github.com/crypto-code/Hopfield-Network/blob/master/assets/result_0.png" height=400 align="middle"/> </p>
+  
+ <p align="center">
+  <img src="https://github.com/crypto-code/Hopfield-Network/blob/master/assets/result_1.png" height=400 align="middle"/> </p>
+
+This script trains the network on the provided images and tests image recounstruction by using the "images+random noise" as input. As seen above the images are reconstructed almost perfectly.
+
+
+- To train a Hopfield Network to reconstruct images from custom noisy images, first place the train images in the /train_custom folder and the noisy images in /test_custom folder (A few images are already provided). Then run train_custom.py script.
+
+**Note: The noisy images should have same name as its corresponding train image**
+
+### Result
+
+<p align="center">
+  <img src="https://github.com/crypto-code/Hopfield-Network/blob/master/assets/result_0_custom.png" height=400 align="middle"/> </p>
+  
+As you can see above the unwanted parts of the images are removed. In the first image the **&** is removed and in the second the man's glasses is removed almost perfectly.
+
+
+### Model Weights:
+**Note: If you want to plot the weights of the network, just uncomment line:116 in train.py and line:124 in train_custom.py**
+<p align="center">
+  <img src="https://github.com/crypto-code/Hopfield-Network/blob/master/assets/weights.png" align="middle"/> </p>
+  
+# G00D LUCK
+
+For doubts email me at:
+atinsaki@gmail.com
