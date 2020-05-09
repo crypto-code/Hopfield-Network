@@ -111,6 +111,7 @@ def main():
     data_path = os.path.join(img_dir,'*g')
     files = glob.glob(data_path)
     test = []
+    # Since same name order will be the same
     for f1 in files:
         img = rgb2gray(cv2.imread(f1))
         test.append(img)
